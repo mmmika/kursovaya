@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кулинарные рецепты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fefaf1;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f48898;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .nav a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+        .banner {
+            background-color: #fef5cc;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #fdc48f;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        .recipes {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s ease;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+        .footer {
+            background-color: #f48898;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🍰 Рецепты с Любовью</div>
+        <nav class="nav">
+            <a href="#">Главная</a>
+            <a href="recipes.html">Рецепты</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Лучшие рецепты для сладкоежек</h1>
+        <p>Найдите любимые рецепты или откройте новые вкусы</p>
+        <a class="btn" href="recipes.html">Перейти к рецептам</a>
+    </section>
+
+    <section class="recipes">
+        <h2>Рецепты дня</h2>
+        <div class="cards">
+            <a class="card" href="strawberry_recipe.html">🧁 Клубничный капкейк</a>
+            <a class="card" href="recipe.html">🍩 Шоколадный пончик</a>
+            <a class="card" href="recipe.html">🍓 Тарт с малиной</a>
+        </div>
+    </section>
+
+    <section class="recipes">
+        <h2>Новые рецепты</h2>
+        <div class="cards">
+            <a class="card" href="recipe.html">🍪 Печенье с орехами</a>
+            <a class="card" href="recipe.html">🍰 Чизкейк</a>
+            <a class="card" href="recipe.html">🥧 Яблочный пирог</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Рецепты с Любовью. Все права защищены.</p>
+    </footer>
+</body>
+</html>
