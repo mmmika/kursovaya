@@ -1,0 +1,134 @@
+﻿
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fefaf1;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: #f48898;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fefaf1;
+}
+
+footer {
+  background-color: #f48898;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #f48898;
+}
+
+.recipe-card {
+  background-color: #fef5cc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.recipe-card h3 {
+  color: #f48898;
+  margin-top: 0;
+}
+
+.button {
+  display: block; 
+  width: fit-content; 
+  margin: 20px auto; 
+  background-color: #fdc48f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #f48898;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 2rem 0;
+  color: #f48898;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-layout {
+  display: flex;
+  gap: 40px;
+}
+        
+.recipe-content {
+  flex: 1;
+}
+        
+.recipe-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+        
+.recipe-image img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  margin: 2rem 0 2rem;
+}

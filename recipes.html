@@ -1,114 +1,42 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кулинарные рецепты</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #fefaf1;
-            color: #333;
-        }
-
-        header {
-            background-color: #f48898;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-            header a {
-                color: white;
-                text-decoration: none;
-                margin: 0 1rem;
-                font-weight: 600;
-            }
-
-        .container {
-            padding: 2rem;
-        }
-
-        .recipe-card {
-            background-color: #fef5cc;
-            border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            transition: 0.3s;
-        }
-
-            .recipe-card:hover {
-                background-color: #fdc48f;
-            }
-
-            .recipe-card h2 {
-                margin-top: 0;
-            }
-
-            .recipe-card a {
-                text-decoration: none;
-                color: #f48898;
-                font-weight: 600;
-            }
-
-        .search-filter {
-            margin-bottom: 2rem;
-        }
-
-            .search-filter input, .search-filter select {
-                padding: 0.5rem;
-                margin-right: 1rem;
-            }
-    </style>
-    <script>
-    function filterRecipes() {
-      const input = document.getElementById('searchInput').value.toLowerCase();
-      const category = document.getElementById('categoryFilter').value;
-      const cards = document.querySelectorAll('.recipe-card');
-
-      cards.forEach(card => {
-        const title = card.querySelector('h2').textContent.toLowerCase();
-        const categoryMatch = category === 'Все категории' || card.dataset.category === category;
-        const searchMatch = title.includes(input);
-        card.style.display = (categoryMatch && searchMatch) ? 'block' : 'none';
-      });
-    }
-    </script>
+    <meta charset="UTF-8">
+    <title>Все рецепты</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div><strong>МоиРецепты</strong></div>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="recipes.html">Рецепты</a>
-        </nav>
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">НЯМКА</div>
+            <nav class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="recipes.html">Рецепты</a>
+                <a href="#">Соцсети</a>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
-        <h1>Рецепты</h1>
-        <div class="search-filter">
-            <input type="text" id="searchInput" oninput="filterRecipes()" placeholder="Поиск по названию..." />
-            <select id="categoryFilter" onchange="filterRecipes()">
-                <option>Все категории</option>
-                <option>Десерты</option>
-                <option>Основные блюда</option>
-                <option>Закуски</option>
-            </select>
+        <h2>Все рецепты</h2>
+        <div class="recipe-card">
+            <h3>Клубничные кексы</h3>
+            <img src="images/strawberry_cupcake.jpg" alt="Клубничные кексы">
+            <p>Нежные кексы с ароматом свежей клубники.</p>
+            <a class="button" href="strawberry_recipe.html">Посмотреть рецепт</a>
         </div>
-        <div class="recipe-card" data-category="Десерты">
-            <h2>Клубничные кексы</h2>
-            <p>Нежные кексы с клубничным кремом, идеально к чаю.</p>
-            <a href="strawberry_recipe.html">Читать рецепт</a>
-        </div>
-        <div class="recipe-card" data-category="Десерты">
-            <h2>Шоколадные маффины</h2>
-            <p>Влажные и насыщенные маффины для любителей шоколада.</p>
-            <a href="recipe-choco.html">Читать рецепт</a>
+
+        <div class="recipe-card">
+            <h3>Шоколадные маффины</h3>
+            <img src="images/chocolate_muffin.jpg" alt="Шоколадные маффины">
+            <p>Пышные маффины с насыщенным шоколадным вкусом.</p>
+            <a class="button" href="choco_maff_recipe.html">Посмотреть рецепт</a>
         </div>
     </div>
+
+    <footer>
+        © 2025 Кулинарные рецепты. Все права защищены.
+    </footer>
 </body>
 </html>
