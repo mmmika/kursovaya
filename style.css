@@ -132,3 +132,13 @@ h1, h2, h3 {
   object-fit: cover;
   margin: 2rem 0 2rem;
 }
+
+@media (max-width: 768px) {
+    .recipe-layout {
+        flex-direction: column;
+    }
+    
+    .recipe-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
