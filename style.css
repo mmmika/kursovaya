@@ -176,3 +176,9 @@ h1, h2, h3 {
         order: -1;
         margin-bottom: 20px;
     }
+  
+    .banner-text {
+        -webkit-text-stroke: 1px #fefaf1;
+        word-break: keep-all;
+        font-size: clamp(2.5rem, 12vw, 6rem);
+    }
