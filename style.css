@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-.header {
+header {
   background-color: #f48898;
   padding: 10px 0;
   font-family: 'Montserrat', sans-serif;
@@ -41,7 +41,7 @@ body {
   color: #fdc48f;
 }
 
-.footer {
+footer {
   background-color: #f48898;
   color: #fefaf1;
   text-align: center;
