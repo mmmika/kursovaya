@@ -5,7 +5,9 @@
     <title>НЯМКА</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="site-header">
@@ -18,6 +20,10 @@
         </div>
     </header>
 
+    <div class="fullscreen-banner">
+        <div class="banner-text">НЯМКА</div>
+    </div>
+    
     <div class="container">
         <section>
             <h2>О сайте</h2>
@@ -29,19 +35,20 @@
 
         <section>
             <h2>Новые рецепты</h2>
-            <div class="recipe-card">
-                <h3>Клубничные кексы</h3>
-                <img src="images/strawberry_cupcake.jpg" alt="Клубничные кексы">
-                <p>Нежные кексы с ароматом свежей клубники.</p>
-                <a class="button" href="strawberry_recipe.html">Посмотреть рецепт</a>
-            </div>
-
-            <div class="recipe-card">
-                <h3>Шоколадные маффины</h3>
-                <img src="images/chocolate_muffin.jpg" alt="Шоколадные маффины">
-                <p>Пышные маффины с насыщенным шоколадным вкусом.</p>
-                <a class="button" href="choco_maff_recipe.html">Посмотреть рецепт</a>
-            </div>
+            <div class="horizontal-recipes">            
+                <div class="recipe-card">
+                    <h3>Клубничные кексы</h3>
+                    <img src="images/strawberry_cupcake.jpg" alt="Клубничные кексы">
+                    <p>Нежные кексы с ароматом свежей клубники.</p>
+                    <a class="button" href="strawberry_recipe.html">Посмотреть рецепт</a>
+                </div>
+                <div class="recipe-card">
+                    <h3>Шоколадные маффины</h3>
+                    <img src="images/chocolate_muffin.jpg" alt="Шоколадные маффины">
+                    <p>Пышные маффины с насыщенным шоколадным вкусом.</p>
+                    <a class="button" href="choco_maff_recipe.html">Посмотреть рецепт</a>
+                </div>
+            </div>               
         </section>
 
         <a class="button" href="recipes.html">Перейти ко всем рецептам</a>
