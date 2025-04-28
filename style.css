@@ -25,14 +25,14 @@ body {
 
 .logo {
   font-size: 26px;
-  color: #ffffff;
+  color: #fefaf1;
   text-transform: uppercase;
 }
 
 .nav-links a {
   margin-left: 30px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fefaf1;
   font-size: 16px;
   transition: color 0.3s;
 }
@@ -41,13 +41,13 @@ body {
   color: #fdc48f;
 }
 
-footer {
+.footer {
   background-color: #f48898;
-  color: white;
+  color: #fefaf1;
   text-align: center;
   padding: 12px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-top-line {
@@ -57,15 +57,11 @@ footer {
   margin: 0 auto 20px;
 }
 
-.footer-text {
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
 .social-icons a {
   color: white;
   font-size: 24px;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
