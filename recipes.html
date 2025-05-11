@@ -21,6 +21,10 @@
 
     <div class="container">
         <h2>Все рецепты</h2>
+        <input id="searchbar" 
+            onkeyup="search_recipe()" 
+            type="text" 
+            placeholder="Поиск рецептов...">
         <div class="recipe-card">
             <h3>Клубничные кексы</h3>
             <img src="images/strawberry_cupcake.jpg" alt="Клубничные кексы">
@@ -48,5 +52,8 @@
         </div>
       </div>
     </footer>
+    
+    <script src="scripts.js"></script>
+    
 </body>
 </html>
