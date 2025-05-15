@@ -1,6 +1,6 @@
 ﻿
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
   background-color: #fefaf1;
   margin: 0;
   padding: 0;
@@ -207,3 +207,7 @@ h1, h2, h3 {
         word-break: keep-all;
         font-size: clamp(2.5rem, 12vw, 6rem);
     }
+
+body, h1, h2, h3, h4, h5, h6, p, a, input, button, .ui, .ui.button, .ui.dropdown, .ui.menu, .ui.header, .ui.input {
+  font-family: 'Montserrat', sans-serif !important;
+}
