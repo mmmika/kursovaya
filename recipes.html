@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -21,18 +23,50 @@
 
     <div class="container">
         <h2>Все рецепты</h2>
+        
         <input id="searchbar" 
             onkeyup="search_recipe()" 
             type="text" 
             placeholder="Поиск рецептов...">
-        <div class="recipe-card">
+        
+        <div class="ui floating dropdown labeled icon button">
+            <i class="filter icon"></i>
+            <span class="text">Фильтр по тегам</span>
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="search icon"></i>
+                    <input type="text" placeholder="Поиск тегов...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="tags icon"></i>
+                    Категории
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-tag="десерты">
+                        <div class="ui pink empty circular label"></div>
+                        Десерты
+                    </div>
+                    <div class="item" data-tag="пп">
+                        <div class="ui green empty circular label"></div>
+                        ПП
+                    </div>
+                    <div class="item" data-tag="выпечка">
+                        <div class="ui orange empty circular label"></div>
+                        Выпечка
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="recipe-card" data-tags="десерты,выпечка">
             <h3>Клубничные кексы</h3>
             <img src="images/strawberry_cupcake.jpg" alt="Клубничные кексы">
             <p>Нежные кексы с ароматом свежей клубники.</p>
             <a class="button" href="strawberry_recipe.html">Посмотреть рецепт</a>
         </div>
 
-        <div class="recipe-card">
+        <div class="recipe-card" data-tags="десерты,выпечка">
             <h3>Шоколадные маффины</h3>
             <img src="images/chocolate_muffin.jpg" alt="Шоколадные маффины">
             <p>Пышные маффины с насыщенным шоколадным вкусом.</p>
@@ -42,18 +76,21 @@
 
     </div>
     <footer>
-      <div class="footer-top-line"></div>
-      <div class="footer-content">
-        <p>Спасибо за вашу поддержку! Будем рады видеть вас на наших других платформах!</p>
-        <div class="social-icons">
-          <a href="https://vk.com/"><i class="fab fa-vk"></i></a>
-          <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    <div class="footer-top-line"></div>
+        <div class="footer-content">
+            <p>Спасибо за вашу поддержку! Будем рады видеть вас на наших других платформах!</p>
+            <div class="social-icons">
+                <a href="https://vk.com/"><i class="fab fa-vk"></i></a>
+                <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-      </div>
     </footer>
     
     <script src="scripts.js"></script>
-    
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
+
 </body>
 </html>
