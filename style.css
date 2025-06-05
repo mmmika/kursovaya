@@ -129,7 +129,7 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-.button {
+.custom-button {
   display: block; 
   width: fit-content; 
   margin: 20px auto; 
@@ -142,7 +142,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.button:hover {
+.custom-button:hover {
   background-color: #f48898;
 }
 
