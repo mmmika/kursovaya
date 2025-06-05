@@ -129,12 +129,12 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
-.custom-button {
+.button {
   display: block; 
   width: fit-content; 
   margin: 20px auto; 
   background-color: #fdc48f;
-  color: #fff;
+  color: #fff !important;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -142,7 +142,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.custom-button:hover {
+.button:hover {
   background-color: #f48898;
 }
 
