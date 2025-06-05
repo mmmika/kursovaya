@@ -28,3 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const tagFilter = document.getElementById("tagFilter");
+    const recipeCards = document.querySelectorAll(".recipe-card");
+
+    tagFilter.addEventListener("change", function () {
+        const selectedTag = tagFilter.value;
+
+        recipeCards.forEach(function (card) {
+            const tag = card.getAttribute("data-tag");
+
+            if (selectedTag === "all" || tag === selectedTag) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
