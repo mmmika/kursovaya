@@ -9,26 +9,6 @@ function search_recipe() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const select = document.getElementById("tagFilter");
-  const recipes = document.querySelectorAll(".recipe");
-
-  if (select) {
-    select.addEventListener("change", () => {
-      const selectedTag = select.value;
-
-      recipes.forEach(recipe => {
-        const tag = recipe.getAttribute("data-tag");
-        if (selectedTag === "all" || tag === selectedTag) {
-          recipe.style.display = "block";
-        } else {
-          recipe.style.display = "none";
-        }
-      });
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     const tagFilter = document.getElementById("tagFilter");
     const recipeCards = document.querySelectorAll(".recipe-card");
 
